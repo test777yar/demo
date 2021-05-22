@@ -30,6 +30,7 @@ namespace Demo
         private void InitializeComponent()
         {
             this.productLayout = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // productLayout
@@ -39,11 +40,21 @@ namespace Demo
             this.productLayout.Size = new System.Drawing.Size(806, 493);
             this.productLayout.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(863, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // ProductList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1080, 708);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.productLayout);
             this.Name = "ProductList";
             this.Text = "Список товаров";
@@ -54,6 +65,7 @@ namespace Demo
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel productLayout;
+        private System.Windows.Forms.Button button1;
     }
 }
 
